@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+  width:100%;
+}
+
+   #contact input {
+    width: 100%;
+    padding: 6px 5px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   }
+   #contact textarea {
+    width: 100%;
+    padding: 6px 5px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }

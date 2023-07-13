@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../css/input.css">
+    <link rel="stylesheet" href="../css/output.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  
+</head>
+<body>
+    <nav class="w-full px-4 md:px-8 py-4 flex justify-between items-center">
+        <button onclick="document.querySelector('#menu').classList.toggle('hidden');" id="navigation_toggle" class="bg-transparent border-0 decoration-transparent flex flex-col gap-1">
+            <div class="w-8 h-1 bg-black"></div>
+            <div class="w-8 h-1 bg-black"></div>
+            <div class="w-8 h-1 bg-black"></div>
+        </button>
+        <div class="flex items-center gap-2 justify-center">
+            <img src="/images/icons/right_icon.svg" alt="right_icon" class="inline-block w-8 h-8 mr-2">
+            <a class="text-blue-500 text-xl">
+                DIGITAL
+            </a>
+        </div>
+        <button class="border border-gray-800 rounded px-4 py-2 hover:bg-gray-800 hover:text-white transition-all">
+            Booking Now
+        </button>
+
+
+        <div id="menu" class="hidden fixed top-0 left-0 flex flex-col justify-between h-screen w-full bg-white z-50 px-8 py-4">
+            <div class="flex gap-4">
+            <button onclick="document.querySelector('#menu').classList.toggle('hidden');" id="navigation_toggle" class="bg-transparent border-0 decoration-transparent text-3xl">
+                <img src="/images/icons/cross_icon.svg" alt="left_icon" class="inline-block w-8 h-8 mr-2">
+            </button>
+            <select name="language" id="language" class="bg-white cursor-pointer rounded px-4 py-2 hover:bg-gray-800 hover:text-white transition-all">
+                <option value="en">EN</option>
+                <option value="id">TR</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col md:flex-row justify-around w-full">
+            <ul class="flex flex-col gap-4">
+                <li>
+                    <a href="#" class="text-gray-800 text-xl md:text-2xl hover:text-gray-600 font-semibold">
+                        Destinations
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-xl md:text-2xl hover:text-gray-600 font-semibold">
+                        Experiences
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-xl md:text-2xl hover:text-gray-600 font-semibold">
+                        Events
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-xl md:text-2xl hover:text-gray-600 font-semibold">
+                        Private Stays
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-xl md:text-2xl hover:text-gray-600 font-semibold">
+                        Kempinski Loyalty
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex flex-col gap-4">
+                <li>
+                    <p class="font-bold">
+                        Modify or cancel your booking
+                    </p>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                        Residences
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                        Press Room
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                        Gift Vouchers
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                        Boutique
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                        Travelling In Style
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span class="uppercase text-gray-500">
+                        Share Your Moments
+                    </span>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-base hover:text-gray-600 font-semibold">
+                        @kempinski
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-800 text-base hover:text-gray-600 font-semibold">
+                        #kempinski
+                    </a>
+                </li>
+            </ul>
+          </div>
+          <div class="w-full flex flex-col md:flex-row gap-4 justify-between">
+             <ul class="flex gap-8">
+                <a href="#" class="text-gray-500 text-base hover:text-gray-700">
+                    Legal
+                </a>
+                <a href="#" class="text-gray-500 text-base hover:text-gray-700">
+                    Privacy Policy
+                </a>
+                <a href="#" class="text-gray-500 text-base hover:text-gray-700">
+                    Inprint
+                </a>
+                <a href="#" class="text-gray-500 text-base hover:text-gray-700">
+                    Sitemap
+                </a>
+             </ul>
+
+             social_media_icons
+          </div>
+        </div>
+    </nav>
+
+    <div class="h-screen relative w-full">
+        <img src="../images/hero-image.png" alt="hero_image" class="w-full h-full absolute top-0 object-cover">
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center mt-32">
+        <h1 class="text-5xl font-bold">
+            Destinations
+        </h1>
+        <h2 class="text-lg mt-4 text-center">
+            Explore the world with Kempinski. Where will you go?
+        </h2>
+
+        <div class="swiper destination-swiper my-8">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide group relative z-50">
+                    <img src="../images/slider/slide-1.png" alt="Resim 1" class="rounded w-full">
+                    <div class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full group-hover:block hidden"></div>
+                    <div class="group-hover:flex flex-col hidden">
+                        <h1 class="text-2xl font-bold text-white">
+                            Lorem ipsum
+                        </h1>
+                        <h2 class="text-gray-200 font-semibold">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </h2>
+                    </div>
+                </div>
+                <div class="swiper-slide group relative">
+                    <img src="../images/slider/slide-1.png" alt="Resim 1" class="rounded w-full">
+                    <div class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full group-hover:block hidden"></div>
+                    <div class="group-hover:flex flex-col hidden">
+                        <h1 class="text-2xl font-bold text-white">
+                            Lorem ipsum
+                        </h1>
+                        <h2 class="text-gray-200 font-semibold">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </h2>
+                    </div>
+                </div>
+                <div class="swiper-slide group relative">
+                    <img src="../images/slider/slide-1.png" alt="Resim 1" class="rounded w-full">
+                    <div class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full group-hover:block hidden"></div>
+                    <div class="group-hover:flex flex-col hidden">
+                        <h1 class="text-2xl font-bold text-white">
+                            Lorem ipsum
+                        </h1>
+                        <h2 class="text-gray-200 font-semibold">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </h2>
+                    </div>
+                </div>
+                <div class="swiper-slide group relative">
+                    <img src="../images/slider/slide-1.png" alt="Resim 1" class="rounded w-full">
+                    <div class="bg-black bg-opacity-50 absolute top-0 left-0 w-full h-full group-hover:block hidden"></div>
+                    <div class="group-hover:flex flex-col hidden">
+                        <h1 class="text-2xl font-bold text-white">
+                            Lorem ipsum
+                        </h1>
+                        <h2 class="text-gray-200 font-semibold">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </h2>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="swiper-scrollbar"></div>
+        </div>
+        <script>
+            var imageSwiper = new Swiper(".destination-swiper", {
+                slidesPerView: 3,
+                spaceBetween:30,
+                
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    hide: true,
+                }
+            })
+        </script>
+          
+          
+    </div>
+
+
+    <div class="w-full h-screen header-swiper fade">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide w-full h-full">
+                <img src="../images/slider/slide-1.png" alt="Resim 1" class="w-full h-full object-cover">
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+                <div class="w-full h-full absolute top-0 left-0 flex items-center justify-center flex-col gap-8">
+                    <h1 class="text-5xl text-white font-bold">
+                        Sensational Suites
+                    </h1>
+                    <h2 class="text-lg text-gray-200 font-semibold">
+                        Elevate your travel experince when you step into one of our show-stopping suites
+                    </h2>
+                    <a href="#" class="border text-white hover:bg-white hover:text-black font-bold uppercase rounded px-8 py-4 mt-4">
+                        Discover More
+                    </a>
+
+                    <div class="flex gap-4 items-center justify-center">
+                        <a href="#" class="text-white text-xl">
+                            Suites
+                        </a>
+                        <a href="#" class="text-white text-xl">
+                            Culinary
+                        </a>
+                        <a href="#" class="text-white text-xl">
+                            Special Occasions
+                        </a>
+                        <a href="#" class="text-white text-xl">
+                            Sport and Adventure
+                        </a>
+                        <a href="#" class="text-white text-xl">
+                            For Your Wellbeing
+                        </a>
+                        <a href="#" class="text-white text-xl">
+                            Family
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide w-full h-full">
+                <img src="../images/slider/slide-2.png" alt="Resim 2" class="w-full h-full object-cover">
+                <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+                <div class="w-full h-full absolute top-0 left-0 flex items-center justify-center flex-col gap-8">
+                    <h1 class="text-5xl text-white font-bold">
+                        Flavours of the World
+                    </h1>
+                    <h2 class="text-lg text-gray-200 font-semibold">
+                       Get inspiration for your next rip by exploring our destinations through the creativly of our talented chefs
+                    </h2>
+                    <a href="#" class="border text-white hover:bg-white hover:text-black font-bold uppercase rounded px-8 py-4 mt-4">
+                        Discover More
+                    </a>
+
+                    <div class="flex gap-4 items-center justify-center">
+                        <a href="#" class="text-white text-xl">
+                            Suites
+                        </a>
+                        <a href="#" class="text-white text-xl">
+                            Culinary
+                        </a>
+                        <a href="#" class="text-white text-xl">
+                            Special Occasions
+                        </a>
+                        <a href="#" class="text-white text-xl">
+                            Sport and Adventure
+                        </a>
+                        <a href="#" class="text-white text-xl">
+                            For Your Wellbeing
+                        </a>
+                        <a href="#" class="text-white text-xl">
+                            Family
+                        </a>
+                    </div>
+                    </div>
+            </div>
+        </div>
+
+    <script>
+        var headerSwpier = new Swiper(".header-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        })
+    </script>
+    </div>
+    <div class="mt-32 flex flex-col md:flex-row justify-around items-center px-8 py-4">
+        <div class="md:w-1/3 flex flex-col gap-4 items-start">
+            <h1 class="text-5xl font-bold">
+                Meetings & Events
+            </h1>
+            <p class="text-lg mt-4 break-words">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+            </p>
+            <button class="border border-gray-800 px-4 py-2 rounded font-bold uppercase hover:bg-gray-800 hover:text-white transition-all">
+                Read More
+            </button>
+
+        </div>
+        <div class="meeting-swiper swiper md:w-1/2 h-96 ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide w-full rounded">
+                    <img src="../images/slider/slide-1.png" alt="Resim 1" class="w-full h-full rounded object-cover">
+                    <div class="absolute top-0 left-0 w-full rounded h-full bg-black bg-opacity-50"></div>
+                    <div class="w-full flex-col text-white h-full absolute top-0 left-0 flex items-center justify-around py-8">
+                        <div>
+                        <h1 class="text-3xl font-bold text-center">
+                            Incentive Groups
+                        </h1>
+                        <p class="text-center text-sm mt-2">
+                            Explore ancient Mayan rools and incentive offerings at Kempinski Camcun for an extraordinary getaway
+                        </p>
+                    </div>
+                    <p>
+                        +52 998 3123 51
+                    </p>
+                    <a href="#" class="border border-gray-600 px-4 py-2 rounded font-bold uppercase hover:bg-gray-800 hover:text-white transition-all">
+                        More Details
+                    </a>
+                    </div>
+                </div>
+                <div class="swiper-slide w-full rounded">
+                    <img src="../images/slider/slide-1.png" alt="Resim 1" class="w-full h-full rounded object-cover">
+                    <div class="absolute top-0 left-0 w-full rounded h-full bg-black bg-opacity-50"></div>
+                    <div class="w-full flex-col text-white h-full absolute top-0 left-0 flex items-center justify-around py-8">
+                        <div>
+                        <h1 class="text-3xl font-bold text-center">
+                            Incentive Groups
+                        </h1>
+                        <p class="text-center text-sm mt-2">
+                            Explore ancient Mayan rools and incentive offerings at Kempinski Camcun for an extraordinary getaway
+                        </p>
+                    </div>
+                    <p>
+                        +52 998 3123 51
+                    </p>
+                    <a href="#" class="border border-gray-600 px-4 py-2 rounded font-bold uppercase hover:bg-gray-800 hover:text-white transition-all">
+                        More Details
+                    </a>
+                    </div>
+                </div>
+                <div class="swiper-slide w-full rounded">
+                    <img src="../images/slider/slide-1.png" alt="Resim 1" class="w-full h-full rounded object-cover">
+                    <div class="absolute top-0 left-0 w-full rounded h-full bg-black bg-opacity-50"></div>
+                    <div class="w-full flex-col text-white h-full absolute top-0 left-0 flex items-center justify-around py-8">
+                        <div>
+                        <h1 class="text-3xl font-bold text-center">
+                            Incentive Groups
+                        </h1>
+                        <p class="text-center text-sm mt-2">
+                            Explore ancient Mayan rools and incentive offerings at Kempinski Camcun for an extraordinary getaway
+                        </p>
+                    </div>
+                    <p>
+                        +52 998 3123 51
+                    </p>
+                    <a href="#" class="border border-gray-600 px-4 py-2 rounded font-bold uppercase hover:bg-gray-800 hover:text-white transition-all">
+                        More Details
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+            <script>
+                let meetingSwiper = new Swiper(".meeting-swiper", {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    scrollbar: {
+                        el: ".swiper-scrollbar",
+                    },
+                })
+            </script>
+        </div>
+    </div>
+    <div class="mt-32">
+        <h1 class=" text-3xl md:text-5xl font-bold text-center">
+            Show us your @KempinskiCancun
+        </h1>
+        <h2 class="md:text-lg text-center mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+        </h2>
+        <div class="swiper image-swiper my-8">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../images/slider/slide-1.png" alt="Resim 1" class="rounded w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/slider/slide-2.png" alt="Resim 2" class="rounded w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/slider/slide-3.png" alt="Resim 3" class="rounded w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/slider/slide-4.png" alt="Resim 4" class="rounded w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/slider/slide-5.png" alt="Resim 5" class="rounded w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/slider/slide-6.png" alt="Resim 6" class="rounded w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/slider/slide-7.png" alt="Resim 7" class="rounded w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/slider/slide-8.png" alt="Resim 8" class="rounded w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/slider/slide-9.png" alt="Resim 9" class="rounded w-full">
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+        </div>
+        <script>
+            var imageSwiper = new Swiper(".image-swiper", {
+                slidesPerView: 5,
+                spaceBetween:30,
+                
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                }
+            })
+        </script>
+  </div>
+
+</script>
+    </div>
+    <footer class="flex flex-col justify-between border-t mt-32 h-auto w-full bg-white z-50 px-8 py-4">
+      <div class="flex flex-col md:flex-row justify-around w-full">
+        <ul class="flex flex-col gap-4">
+            <li>
+                <a href="#" class="text-gray-800 text-xl md:text-2xl hover:text-gray-600 font-semibold">
+                    Destinations
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-xl md:text-2xl hover:text-gray-600 font-semibold">
+                    Experiences
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-xl md:text-2xl hover:text-gray-600 font-semibold">
+                    Events
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-xl md:text-2xl hover:text-gray-600 font-semibold">
+                    Private Stays
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-xl md:text-2xl hover:text-gray-600 font-semibold">
+                    Kempinski Loyalty
+                </a>
+            </li>
+        </ul>
+        <ul class="flex flex-col gap-4">
+            <li>
+                <p class="font-bold">
+                    Modify or cancel your booking
+                </p>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                    About Us
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                    Residences
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                    Press Room
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                    Gift Vouchers
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                    Boutique
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                    Travelling In Style
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-lg md:text-xl hover:text-gray-600 font-semibold">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="uppercase text-gray-500">
+                    Share Your Moments
+                </span>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-base hover:text-gray-600 font-semibold">
+                    @kempinski
+                </a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-800 text-base hover:text-gray-600 font-semibold">
+                    #kempinski
+                </a>
+            </li>
+        </ul>
+      </div>
+      <div class="w-full flex flex-col md:flex-row gap-4 justify-between mt-8">
+         <ul class="flex gap-8">
+            <a href="#" class="text-gray-500 text-base hover:text-gray-700">
+                Legal
+            </a>
+            <a href="#" class="text-gray-500 text-base hover:text-gray-700">
+                Privacy Policy
+            </a>
+            <a href="#" class="text-gray-500 text-base hover:text-gray-700">
+                Inprint
+            </a>
+            <a href="#" class="text-gray-500 text-base hover:text-gray-700">
+                Sitemap
+            </a>
+         </ul>
+
+         social_media_icons
+      </div>
+    </footer>
+
+    <script src="../js/slider.js"></script>
+    <script src="../js/imageslider.js"></script>
+    <script src="../js/autoslider.js"></script>
+
+</body>
+</html>
